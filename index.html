@@ -490,18 +490,18 @@
         </div>
       </div>
       <div class="contact-right reveal">
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/mzdyvorn" method="POST">
           <div class="form-group">
             <label>Nama</label>
-            <input type="text" placeholder="Nama Anda" required />
+            <input type="text" name="name" placeholder="Nama Anda" required />
           </div>
           <div class="form-group">
             <label>Email</label>
-            <input type="email" placeholder="email@contoh.com" required />
+            <input type="email" name="email" placeholder="email@contoh.com" required />
           </div>
           <div class="form-group">
             <label>Pesan</label>
-            <textarea placeholder="Halo Yudhistira, saya ingin..." rows="5" required></textarea>
+            <textarea name="message" placeholder="Halo Yudhistira, saya ingin..." rows="5" required></textarea>
           </div>
           <button type="submit" class="btn-primary btn-full">Kirim Pesan</button>
         </form>
