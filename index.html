@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yudhistira Gilang — Civil Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav-logo">RR.</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Ganti Tema">
+        <span class="theme-icon sun">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </span>
+        <span class="theme-icon moon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#resume" class="mobile-link">Resume</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════ HERO / HOME ═══════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text">CIVIL</div>
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal">
+        <span class="dot"></span> Teknik Infrastruktur Sipil — ITS Surabaya
+      </div>
+      <h1 class="hero-title reveal-delay-1">
+        <span class="hero-title-line">Yudhistira</span>
+        <span class="hero-title-line italic">Gilang</span>
+        <span class="hero-title-line">Narendratama</span>
+      </h1>
+      <p class="hero-sub reveal-delay-2">
+        Mahasiswa Sipil yang passionate dalam konstruksi,<br/>
+        riset tanah, dan pengabdian masyarakat.
+      </p>
+      <div class="hero-actions reveal-delay-3">
+        <a href="#projects" class="btn-primary">Lihat Proyek</a>
+        <a href="MENTOR_2036221040_YUDHISTIRA GILANG NARENDRATAMA_CV.pdf" class="btn-ghost" download>Unduh CV <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></a>
+      </div>
+    </div>
+    <div class="hero-image-wrap reveal-delay-2">
+      <div class="hero-image-frame">
+        <img src="FOTO PROFIL.jpeg" alt="Yudhistira Gilang Narendratama" class="hero-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="hero-photo-placeholder">
+          <span>YGN</span>
+        </div>
+        <div class="hero-image-badge">
+          <span>2022 — Present</span>
+          <span class="badge-label">ITS</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="section-label">01 / About Me</div>
+    <div class="about-grid">
+      <div class="about-left">
+        <h2 class="section-title reveal">Kenali<br/><em>Lebih</em><br/>Dalam.</h2>
+      </div>
+      <div class="about-right">
+        <p class="about-text reveal">
+          Saya adalah mahasiswa aktif <strong>Teknik Infrastruktur Sipil angkatan 2022</strong> di Institut Teknologi Sepuluh Nopember (ITS) Surabaya. Dengan IPK 3.06/4.00, saya telah menempuh perjalanan akademik yang diperkaya oleh berbagai pengalaman lapangan dan organisasi.
+        </p>
+        <p class="about-text reveal">
+          Pengalaman saya mencakup investigasi tanah untuk sumur resapan di Malang, survei harga bahan bangunan untuk Dinas PU Jawa Timur, dan kontribusi aktif dalam puluhan kepanitiaan di lingkungan kampus. Saya percaya bahwa teknik sipil bukan hanya soal struktur, tapi juga tentang dampak nyata bagi masyarakat.
+        </p>
+        <div class="about-info-grid reveal">
+          <div class="info-item">
+            <span class="info-label">Lokasi</span>
+            <span class="info-val">Surabaya, Jawa Timur</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Email</span>
+            <span class="info-val">yudhistira.ygn@gmail.com</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">WhatsApp</span>
+            <span class="info-val">083147437359</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Status</span>
+            <span class="info-val">Mahasiswa Aktif</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ RESUME ═══════════════════════════════ -->
+  <section class="resume" id="resume">
+    <div class="section-label">02 / CV & Resume</div>
+    <div class="resume-header reveal">
+      <h2 class="section-title">Perjalanan<br/><em>Profesional</em></h2>
+      <a href="cv_yudhistira.pdf" class="btn-primary" download>
+        Unduh PDF
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+    </div>
+
+    <div class="resume-cols">
+      <!-- Education -->
+      <div class="resume-col">
+        <div class="resume-col-title reveal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          Pendidikan
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Sep 2022 — Sekarang</span>
+              <h4>Institut Teknologi Sepuluh Nopember</h4>
+              <p>D4 Teknik Infrastruktur Sipil</p>
+              <span class="timeline-badge">IPK 3.06 / 4.00</span>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Jul 2019 — Jul 2022</span>
+              <h4>SMA Dharma Wanita Surabaya</h4>
+              <p>IPA — Surabaya</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Work Experience -->
+      <div class="resume-col">
+        <div class="resume-col-title reveal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          Pengalaman Kerja
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot orange"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Feb 2024</span>
+              <h4>Surveyor — Survey Bahan Bangunan</h4>
+              <p>Jember & Situbondo, Jawa Timur</p>
+              <p class="timeline-desc">Pendataan harga bahan bangunan di seluruh toko Jawa Timur untuk Dinas PU Jawa Timur.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot orange"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Mei 2023</span>
+              <h4>Soil Investigator — Abmas Sumur Resapan</h4>
+              <p>Malang, Jawa Timur</p>
+              <p class="timeline-desc">Penelitian infiltrasi tanah menggunakan Eco-Block di sumur resapan Kota Malang.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Organization Highlights -->
+      <div class="resume-col">
+        <div class="resume-col-title reveal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Organisasi Utama
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Feb 2024 — Sekarang</span>
+              <h4>Kepala Divisi Equipment</h4>
+              <p>D'Village 13th Edition — HMDS ITS</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Nov 2023</span>
+              <h4>Koordinator Kestari</h4>
+              <p>Interval 2023 — HMDS ITS</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Jul 2020 — Agu 2021</span>
+              <h4>Ketua MPK — UNOS</h4>
+              <p>SMA Dharma Wanita Surabaya</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
+  <section class="projects" id="projects">
+    <div class="section-label">03 / Projects</div>
+    <h2 class="section-title reveal">Proyek &amp;<br/><em>Karya Nyata</em></h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal" data-index="01">
+        <div class="project-card-top">
+          <div class="project-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M3 12h3m12 0h3M12 3v3m0 12v3"/><path d="m5.6 5.6 2.1 2.1m8.5 8.5 2.1 2.1m0-12.7-2.1 2.1M7.7 16.2l-2.1 2.1"/></svg>
+          </div>
+          <span class="project-year">2023</span>
+        </div>
+        <div class="project-num">01</div>
+        <h3 class="project-title">Penelitian Sumur Resapan dengan Eco-Block</h3>
+        <p class="project-loc">📍 Malang, Jawa Timur</p>
+        <div class="project-tags">
+          <span>Soil Investigation</span>
+          <span>Geoteknik</span>
+          <span>Eco-Block</span>
+        </div>
+        <div class="project-body">
+          <div class="project-detail">
+            <strong>Tujuan</strong>
+            <p>Meneliti efektivitas Eco-Block dalam meningkatkan laju infiltrasi air pada sumur resapan di Kota Malang sebagai solusi drainase perkotaan berkelanjutan.</p>
+          </div>
+          <div class="project-detail">
+            <strong>Metode</strong>
+            <p>Pengujian lapangan dengan membandingkan kecepatan infiltrasi tanah pada sumur resapan yang menggunakan Eco-Block vs tanpa Eco-Block menggunakan metode Falling Head Permeability.</p>
+          </div>
+          <div class="project-detail">
+            <strong>Hasil</strong>
+            <p>Sumur resapan dengan Eco-Block terbukti memiliki laju infiltrasi yang lebih tinggi secara signifikan, meningkatkan efisiensi penyerapan air hujan ke dalam tanah.</p>
+          </div>
+        </div>
+        <div class="project-vis eco-vis">
+          <div class="eco-chart">
+            <div class="eco-bar-wrap">
+              <div class="eco-bar-label">Tanpa Eco-Block</div>
+              <div class="eco-bar-bg"><div class="eco-bar" style="width:38%">38%</div></div>
+            </div>
+            <div class="eco-bar-wrap">
+              <div class="eco-bar-label">Dengan Eco-Block</div>
+              <div class="eco-bar-bg"><div class="eco-bar accent" style="width:87%">87%</div></div>
+            </div>
+            <div class="eco-note">Laju Infiltrasi Relatif</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-index="02">
+        <div class="project-card-top">
+          <div class="project-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <span class="project-year">2024</span>
+        </div>
+        <div class="project-num">02</div>
+        <h3 class="project-title">Survei Harga Bahan Bangunan Jawa Timur</h3>
+        <p class="project-loc">📍 Jember & Situbondo, Jawa Timur</p>
+        <div class="project-tags">
+          <span>Survey</span>
+          <span>Data Collection</span>
+          <span>Dinas PU</span>
+        </div>
+        <div class="project-body">
+          <div class="project-detail">
+            <strong>Tujuan</strong>
+            <p>Pendataan komprehensif harga bahan bangunan di seluruh toko bangunan Jawa Timur untuk mendukung penetapan Harga Satuan Pekerjaan (HSP) Dinas PU Jawa Timur.</p>
+          </div>
+          <div class="project-detail">
+            <strong>Metode</strong>
+            <p>Survei lapangan langsung ke toko-toko bangunan di wilayah Jember dan Situbondo, pencatatan harga material konstruksi secara sistematis.</p>
+          </div>
+          <div class="project-detail">
+            <strong>Hasil</strong>
+            <p>Data harga bahan bangunan komprehensif yang diserahkan kepada Dinas PU Jawa Timur sebagai referensi penetapan standar harga material konstruksi regional.</p>
+          </div>
+        </div>
+        <div class="project-vis survey-vis">
+          <div class="survey-map">
+            <div class="map-jatim">
+              <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 40 Q30 20 60 30 Q90 15 120 25 Q150 10 180 20 Q195 30 190 50 Q170 65 140 55 Q110 70 80 60 Q50 65 20 55 Z" fill="rgba(230,120,50,0.15)" stroke="rgba(230,120,50,0.5)" stroke-width="1.5"/>
+                <circle cx="130" cy="48" r="5" fill="#e67832" opacity="0.9"/>
+                <text x="125" y="62" font-size="7" fill="#e67832" font-family="DM Sans">Jember</text>
+                <circle cx="160" cy="35" r="5" fill="#e67832" opacity="0.9"/>
+                <text x="152" y="27" font-size="7" fill="#e67832" font-family="DM Sans">Situbondo</text>
+                <circle cx="60" cy="32" r="3" fill="rgba(230,120,50,0.4)"/>
+                <circle cx="95" cy="22" r="3" fill="rgba(230,120,50,0.4)"/>
+                <text x="4" y="43" font-size="6" fill="rgba(255,255,255,0.4)" font-family="DM Sans">JAWA TIMUR</text>
+              </svg>
+            </div>
+            <div class="survey-stats">
+              <div class="s-stat"><span class="s-num">2</span><span class="s-lab">Kota</span></div>
+              <div class="s-stat"><span class="s-num">50+</span><span class="s-lab">Toko</span></div>
+              <div class="s-stat"><span class="s-num">PU</span><span class="s-lab">Output</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal project-card-wide" data-index="03">
+        <div class="project-card-top">
+          <div class="project-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <span class="project-year">2023–2024</span>
+        </div>
+        <div class="project-num">03</div>
+        <h3 class="project-title">Kepemimpinan & Manajemen Event Nasional — D'Village</h3>
+        <p class="project-loc">📍 Surabaya — Skala Nasional</p>
+        <div class="project-tags">
+          <span>Event Management</span>
+          <span>Leadership</span>
+          <span>Logistics</span>
+          <span>HMDS ITS</span>
+        </div>
+        <div class="project-body project-body-wide">
+          <div class="project-detail">
+            <strong>Tujuan</strong>
+            <p>D'Village adalah acara tahunan HMDS ITS berskala nasional yang bertujuan mengembangkan dunia ketekniksipilan bagi generasi muda Indonesia.</p>
+          </div>
+          <div class="project-detail">
+            <strong>Peran</strong>
+            <p><strong>12th Edition:</strong> Staff Divisi Logistic Subdivisi Equipment.<br/><strong>13th Edition:</strong> Kepala Divisi Equipment — memimpin tim perlengkapan untuk keseluruhan rangkaian acara nasional.</p>
+          </div>
+          <div class="project-detail">
+            <strong>Hasil</strong>
+            <p>Berhasil memimpin divisi equipment dari staff ke kepala divisi, membuktikan pertumbuhan kapasitas manajerial dan kepemimpinan dalam event berskala nasional.</p>
+          </div>
+        </div>
+        <div class="growth-timeline">
+          <div class="growth-step past">
+            <div class="g-circle">12th</div>
+            <span>Staff Logistic</span>
+          </div>
+          <div class="growth-arrow">→</div>
+          <div class="growth-step current">
+            <div class="g-circle active">13th</div>
+            <span>Kepala Divisi</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ SKILLS ═══════════════════════════════ -->
+  <section class="skills" id="skills">
+    <div class="section-label">04 / Skills</div>
+    <h2 class="section-title reveal">Keahlian &amp;<br/><em>Kompetensi</em></h2>
+
+    <div class="skills-grid">
+      <div class="skills-col">
+        <div class="skills-col-title reveal">Teknis / Hard Skills</div>
+        <div class="skill-bars">
+          <div class="skill-item reveal">
+            <div class="skill-header"><span>Investigasi Tanah (Soil Investigation)</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-header"><span>Survei Lapangan & Data Collection</span><span class="skill-pct">80%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-header"><span>Analisis Geoteknik</span><span class="skill-pct">70%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="70"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-header"><span>Gambar Teknik / AutoCAD</span><span class="skill-pct">65%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="65"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-header"><span>Microsoft Office</span><span class="skill-pct">80%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-col">
+        <div class="skills-col-title reveal">Non-Teknis / Soft Skills</div>
+        <div class="soft-skills-grid">
+          <div class="soft-skill reveal">
+            <div class="soft-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <span>Komunikatif</span>
+          </div>
+          <div class="soft-skill reveal">
+            <div class="soft-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <span>Kerja Tim</span>
+          </div>
+          <div class="soft-skill reveal">
+            <div class="soft-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span>Totalitas</span>
+          </div>
+          <div class="soft-skill reveal">
+            <div class="soft-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <span>Adaptif</span>
+          </div>
+          <div class="soft-skill reveal">
+            <div class="soft-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <span>Bertanggung Jawab</span>
+          </div>
+          <div class="soft-skill reveal">
+            <div class="soft-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <span>Cepat Tanggap</span>
+          </div>
+        </div>
+
+        <div class="skills-col-title reveal" style="margin-top: 2rem;">Kepanitiaan Highlight</div>
+        <div class="event-chips reveal">
+          <span>GERIGI ITS 2023</span>
+          <span>D'Village 12th & 13th</span>
+          <span>OKKBK DTIS'23</span>
+          <span>Interval 2023</span>
+          <span>UNITE 2024</span>
+          <span>Wisuda 128 & 129</span>
+          <span>Makrab DTIS'22</span>
+          <span>HMDS Orientation 2024</span>
+          <span>GRADASI'45</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CONTACT ═══════════════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="section-label">05 / Contact</div>
+    <div class="contact-inner">
+      <div class="contact-left reveal">
+        <h2 class="contact-title">Let's Be<br/><em>Moots?</em></h2>
+        <p>Punya proyek, kolaborasi, atau sekadar ingin berkenalan? Saya terbuka untuk semua kesempatan baru.</p>
+        <div class="contact-links">
+          <a href="mailto:yudhistira.ygn@gmail.com" class="contact-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            yudhistira.ygn@gmail.com
+          </a>
+          <a href="https://wa.me/6283147437359" class="contact-link" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            083147437359 (WhatsApp)
+          </a>
+          <a href="https://www.linkedin.com/in/yudhistiragilang" class="contact-link" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn — Yudhistira Gilang
+          </a>
+        </div>
+      </div>
+      <div class="contact-right reveal">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label>Nama</label>
+            <input type="text" placeholder="Nama Anda" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="email@contoh.com" required />
+          </div>
+          <div class="form-group">
+            <label>Pesan</label>
+            <textarea placeholder="Halo Yudhistira, saya ingin..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">Kirim Pesan</button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <p>Pesan terkirim! Saya akan segera membalas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-name">Yudhistira Gilang Narendratama</span>
+      <span class="footer-copy">© 2026 — Teknik Infrastruktur Sipil, ITS Surabaya</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
